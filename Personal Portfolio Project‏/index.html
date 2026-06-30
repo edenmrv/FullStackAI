@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eden Meerov — Data Scientist & AI Developer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Eden Meerov</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Data Scientist &amp; AI Developer</h1>
+        <p>Master's student in Mathematics and Data Science with a strong focus on Machine Learning, NLP, and large language models. I thrive on building advanced analytical tools and bringing complex data models to life.</p>
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+      </div>
+      <div class="hero-photo">
+        <img class="photo-circle" src="profile.jpg" alt="Eden Meerov Profile Picture">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I am Eden Meerov, I am pursuing an MSc in Mathematics with a specialization in Data Science. Beyond academics, I am associated with TCS Israel and have valuable background experience serving as a combat medic in the army, which taught me to perform under pressure and think analytically.</p>
+        <p>When I'm not training neural networks or developing Python tools, you can find me lifting weights at the gym or taking care of my British Shorthair and Ragdoll cats.</p>
+      </div>
+      <div class="skills">
+        <h3>Skills</h3>
+        <div class="skill">
+          <span class="skill-name">Python</span>
+          <div class="bar"><div class="fill" style="width:95%"></div></div>
+        </div>
+        <div class="skill">
+          <span class="skill-name">Machine Learning</span>
+          <div class="bar"><div class="fill" style="width:90%"></div></div>
+        </div>
+        <div class="skill">
+          <span class="skill-name">Data Analytics</span>
+          <div class="bar"><div class="fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill">
+          <span class="skill-name">NLP & LLMs</span>
+          <div class="bar"><div class="fill" style="width:80%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="cards-grid"> 
+
+        <article class="card">
+          <div class="card-img">
+            <img src="optishift.jpg" alt="OptiShift Project">
+          </div>
+          <div class="card-body">
+            <h3>OptiShift</h3>
+            <p>A comprehensive Python-based shift management tool designed to optimize scheduling processes. Built from the ground up to solve real-world operational challenges.</p>
+            <a href="https://github.com/edenmrv/optishift" target="_blank" class="btn btn-orange">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <img src="portfolio.jpg" alt="Responsive Portfolio">
+          </div>
+          <div class="card-body">
+            <h3>Responsive Portfolio</h3>
+            <p>A personal portfolio website built entirely from scratch with vanilla HTML, CSS, and Flexbox, fully responsive and optimized for all screen sizes.</p>
+            <a href="https://github.com/edenmrv" target="_blank" class="btn btn-orange">View GitHub</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <img src="stack.jpg" alt="FullStack AI Course">
+          </div>
+          <div class="card-body">
+            <h3>FullStack AI Course</h3>
+            <p>My work and projects from the FullStack AI course. Exploring advanced web development combined with artificial intelligence tools and models.</p>
+            <a href="https://github.com/edenmrv/FullStackAI" target="_blank" class="btn btn-orange">View on GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-inner">
+
+        <form class="contact-form" onsubmit="return false">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <ul class="info-list">
+            <li>
+              <svg viewBox="0 0 24 24" class="ic"><path d="M4 4h16v16H4z" fill="none"/><path d="M2 5a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5zm2 1.2V19h16V6.2l-8 5-8-5zM4.5 5l7.5 4.7L19.5 5h-15z"/></svg>
+              <a href="mailto:edenmrv@gmail.com">edenmrv@gmail.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" class="ic"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 .6 3.6 1 1 0 0 1-.25 1l-2.25 2.2z"/></svg>
+              <a href="tel:+972500000000">050-000-0000</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" class="ic"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+              <span>Petah Tikva, Israel</span>
+            </li>
+          </ul>
+          <div class="socials">
+            <a href="https://github.com/edenmrv" target="_blank" class="social" aria-label="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.9-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Eden Meerov. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

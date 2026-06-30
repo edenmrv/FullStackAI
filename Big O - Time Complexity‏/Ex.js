@@ -1,0 +1,5 @@
+// EX1 = O(n)
+// EX2 = O(log n)
+// EX3 = O(1)
+// EX4 = O(N * M)
+// EX5 = O(N)

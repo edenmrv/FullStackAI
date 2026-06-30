@@ -1,0 +1,144 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #6366f1;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #4f46e5;
+}
+.message {
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.message.success {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.message.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.autocomplete-wrapper {
+    position: relative;
+}
+
+.suggestions-box {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 10; 
+}
+
+.suggestion-item {
+    padding: 12px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #f3f4f6;
+    font-size: 16px;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background-color: #f9fafb;
+}
+
+
+.highlight {
+    background-color: #fce4e4;
+    color: #d32f2f;
+    font-weight: bold;
+    padding: 0 2px;
+    border-radius: 3px;
+}
+
+/* Stats Section */
+.stats-section {
+    background-color: #f8fafc;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stats-section h2 {
+    margin: 0;
+    color: #6366f1;
+    font-size: 42px;
+}
+
+.stats-section p {
+    margin: 5px 0 0 0;
+    color: #475569;
+    font-size: 16px;
+}

@@ -1,0 +1,279 @@
+/* ========================
+   EXERCISE 1 
+   ======================== */
+.text-one {
+    font-size: 40px;
+    color: #e7d7fa; 
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.text-two {
+    font-size: 30px;
+    color: #ff1493; 
+    font-family: David, cursive;
+    font-weight: bold;
+}
+
+.text-three {
+    font-size: 25px;
+    color: #19d442; 
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+
+/* ========================
+   EXERCISE 2 
+   ======================== */
+.bookmark {
+    background-color: #ffe4b5; 
+    color: blue;               
+    padding: 10px 20px;        
+    margin-right: 10px;        
+    text-decoration: none;     
+    display: inline-block; 
+}
+
+/* ========================
+   EXERCISE 3 
+   ======================== */
+.bookmark-img img {
+    height: 100px;         
+    margin-right: 20px;    
+}
+/* ========================
+   EXERCISE 4
+   ======================== */
+#container {
+    background-color: rgb(173, 173, 173);
+    width:250px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.box {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    display: inline-block;
+}
+#first {
+    background-color: green;
+}
+#second {
+    background-color: orange;
+}
+.button {
+    background-color: #2ecc71; 
+    border: 1px solid black;
+}
+/* ========================
+   EXERCISE 5
+   ======================== */
+   table {
+    border-collapse: collapse; 
+    border: 1px solid gray;
+}
+   th, td {
+    border-bottom: 1px solid gray;
+    
+   }
+   th {
+    background-color: rgb(189, 188, 188);
+    padding: 10px;
+   }
+   td{
+    background-color: #6df68a;
+    padding: 10px;
+
+   }
+   td:nth-child(8) {
+    font-weight: bold;
+   }
+   td:nth-child(2) {
+    font-weight: bold;
+   }
+   /* ========================
+   EXERCISE 6
+   ======================== */
+
+.main-title {
+    color: blue;
+    text-decoration: underline;
+}
+
+.sub-title {
+    color: black;
+    font-weight: bold;
+}
+
+.main-img {
+    width: 450px; 
+    display: block;
+}
+/* ========================
+   EXERCISE 7
+   ======================== */
+
+.ex7-bg {
+    background-image: url('https://parashat.co.il/wp-content/uploads/2023/09/shlomo0355_Beautiful_backgrounds_of_mountains_colorful_water_pa_ed06cbf4-addb-4b02-ab11-b01f2104dd31.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 40px; 
+    font-family: serif; 
+}
+
+.transparent-title {
+    background-color: #5b73a6; 
+    color: black;
+    opacity: 0.6; 
+    width: 60%; 
+    padding: 20px;
+    margin-bottom: 0; 
+}
+
+.solid-title {
+    background-color: #6a1b62; 
+    color: black;
+    width: 60%;
+    padding: 20px;
+    margin-top: 0; 
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f3ef;
+    color: #2b2b2b;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.card {
+    width: 700px;
+    margin: 25px auto;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2, h3 {
+    color: #2d6a4f;
+    margin-top: 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e6e2da;
+    margin: 20px 0;
+}
+
+a {
+    color: #2d6a4f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #e6e2da;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #2d6a4f;
+    color: white;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2d6a4f;
+}
+
+fieldset {
+    border: 2px solid #e6e2da;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #2d6a4f;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+label {
+    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    border: 2px solid #e6e2da;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 15px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    display: inline-block;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="reset"] {
+    background-color: #e6e2da;
+    color: #2b2b2b;
+}

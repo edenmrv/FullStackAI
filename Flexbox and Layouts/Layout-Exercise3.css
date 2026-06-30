@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background-wrapper {
+    background: linear-gradient(135deg, #6c7cdb 0%, #70459c 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-header h2 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 22px;
+}
+
+.form-header p {
+    margin: 0;
+    color: #777;
+    font-size: 13px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 5px;
+}
+
+.full-width {
+    flex: 100%;
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #6c7cdb;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.preferences-section {
+    margin-bottom: 25px;
+}
+
+.main-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-draft {
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+.btn-send {
+    background-color: #12c2e9;
+    color: white;
+}

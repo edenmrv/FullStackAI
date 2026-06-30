@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8 - Combined CSS Basics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f3ef;
+            color: #2b2b2b;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        .card {
+            width: 700px;
+            margin: 25px auto;
+            background-color: white;
+            padding: 30px 40px;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        h1, h2, h3 {
+            color: #2d6a4f;
+            margin-top: 0;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #e6e2da;
+            margin: 20px 0;
+        }
+
+        a {
+            color: #2d6a4f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #e6e2da;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2d6a4f;
+            color: white;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2d6a4f;
+        }
+
+        fieldset {
+            border: 2px solid #e6e2da;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            color: #2d6a4f;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label {
+            display: inline-block;
+            margin-top: 12px;
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            display: block;
+            width: 95%;
+            padding: 10px;
+            border: 2px solid #e6e2da;
+            border-radius: 8px;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            display: inline-block;
+            margin-right: 5px;
+            margin-top: 15px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            display: inline-block;
+            background-color: #2d6a4f;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        input[type="reset"] {
+            background-color: #e6e2da;
+            color: #2b2b2b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>My Personal Introduction</h1>
+
+        <h2>About Me</h2>
+        <p>Hello! My name is <strong>Eden</strong> and I'm a Master's student in <em>Mathematics and Data Science</em>. I've always been fascinated by technology and how it can be used to solve real-world problems through data.</p>
+
+        <hr>
+
+        <h2>My Interests</h2>
+        <p>When I'm not working on my thesis, you can find me lifting weights at the gym or taking care of my cats.</p>
+
+        <hr>
+
+        <h2>My Goals</h2>
+        <p>My main goal is to finish my Master's degree and build complete web applications to showcase my data projects. I want to specialize in creating user-friendly interfaces for complex models.</p>
+
+        <h3>Short-term Goals</h3>
+        <p>Over the next few months, I plan to master <strong>HTML, CSS, and JavaScript</strong>, build several portfolio projects, and nail my internship applications.</p>
+    </div>
+
+    <div class="card">
+        <h1>My Favorite Things</h1>
+
+        <h2>Favorite Pets</h2>
+        <p>A list of the best cat breeds out there.</p>
+        <ol>
+            <li><strong>British Shorthair</strong></li>
+            <li><strong>Golden British Shorthair</strong></li>
+            <li><strong>Ragdoll</strong></li>
+            <li><strong>Persian</strong></li>
+        </ol>
+
+        <h2>Hobbies & Tech</h2>
+        <p>Things I like to do when I'm not studying or working.</p>
+        <ul>
+            <li><strong>Gaming</strong> - Playing PC games</li>
+            <li><strong>Gym</strong> - Regular weight lifting</li>
+            <li><strong>Home Cinema</strong> - Tweaking Stremio and Real-Debrid setups</li>
+        </ul>
+    </div>
+
+    <div class="card" id="top">
+        <h1>Eden Meerov - Portfolio</h1>
+
+        <h2>My Projects</h2>
+
+        <h3>Project 1: OptiShift</h3>
+        <img src="https://i.etsystatic.com/41587292/r/il/075e1e/5342214888/il_570xN.5342214888_72v4.jpg" alt="OptiShift workforce shift management interface">
+        <p><strong>Description:</strong> A system designed for managing military or workforce shifts.</p>
+        <p>
+            <a href="https://github.com" target="_blank">View on GitHub</a> | 
+            <a href="https://google.com" target="_blank">Live Demo</a>
+        </p>
+
+        <h3>Project 2: Quantum vs Classical Kernels</h3>
+        <img src="https://miro.medium.com/1*wEJywatoMufzt8hCxhvE-w.png" alt="Face recognition model comparing quantum and classical kernels">
+        <p><strong>Description:</strong> A project comparing classical and quantum kernels for face recognition, achieving 99.4% accuracy with the classical model.</p>
+        <p>
+            <a href="https://github.com" target="_blank">View on GitHub</a> | 
+            <a href="https://google.com" target="_blank">Live Demo</a>
+        </p>
+
+        <hr>
+
+        <h2>Contact Information</h2>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:edenmrv@gmail.com">edenmrv@gmail.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com" target="_blank">github.com/edenmeerov</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank">linkedin.com/in/edenmeerov</a></li>
+        </ul>
+
+        <br>
+        <a href="#top">Back to Top</a>
+    </div>
+
+    <div class="card">
+        <h1>Programming Languages Comparison</h1>
+        
+        <p>This table provides a comprehensive comparison of popular programming languages, including their creation year, primary use cases, difficulty level, and popular frameworks.</p>
+
+        <table>
+            <caption>Comparison of Popular Programming Languages in 2024</caption>
+            <tr>
+                <th>Language</th>
+                <th>Year Created</th>
+                <th>Primary Use</th>
+                <th>Difficulty Level</th>
+                <th>Popular Frameworks</th>
+                <th>Average Salary Range</th>
+            </tr>
+            <tr>
+                <td><strong>Python</strong></td>
+                <td>1991</td>
+                <td>Web Development, Data Science, AI</td>
+                <td>Beginner</td>
+                <td>Django, Flask, FastAPI</td>
+                <td>$75,000 - $120,000</td>
+            </tr>
+            <tr>
+                <td><strong>JavaScript</strong></td>
+                <td>1995</td>
+                <td>Web Development, Full-Stack</td>
+                <td>Intermediate</td>
+                <td>React, Vue, Angular, Node.js</td>
+                <td>$70,000 - $115,000</td>
+            </tr>
+            <tr>
+                <td><strong>Java</strong></td>
+                <td>1995</td>
+                <td>Enterprise, Android Development</td>
+                <td>Intermediate</td>
+                <td>Spring, Hibernate, Struts</td>
+                <td>$80,000 - $130,000</td>
+            </tr>
+            <tr>
+                <td><strong>C#</strong></td>
+                <td>2000</td>
+                <td>Windows Applications, Game Dev</td>
+                <td>Intermediate</td>
+                <td>.NET, ASP.NET, Unity</td>
+                <td>$75,000 - $125,000</td>
+            </tr>
+            <tr>
+                <td><strong>Go</strong></td>
+                <td>2009</td>
+                <td>Backend Services, Cloud</td>
+                <td>Intermediate</td>
+                <td>Gin, Echo, Fiber</td>
+                <td>$85,000 - $140,000</td>
+            </tr>
+            <tr>
+                <td><strong>Rust</strong></td>
+                <td>2010</td>
+                <td>Systems Programming, Performance</td>
+                <td>Advanced</td>
+                <td>Actix, Rocket, Tokio</td>
+                <td>$90,000 - $150,000</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h1>Contact Us</h1>
+
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+            </fieldset>
+
+            <fieldset>
+                <legend>Message Details</legend>
+                
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label>Priority:</label><br>
+                <input type="radio" id="low" name="priority" value="low">
+                <label for="low" style="margin-top:0; margin-right:15px; display:inline;">Low</label>
+                <input type="radio" id="medium" name="priority" value="medium">
+                <label for="medium" style="margin-top:0; margin-right:15px; display:inline;">Medium</label>
+                <input type="radio" id="high" name="priority" value="high">
+                <label for="high" style="margin-top:0; display:inline;">High</label><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter" style="margin-top:0; display:inline;">Subscribe to newsletter</label><br><br>
+
+                <label for="contact-method">Contact Method:</label>
+                <select id="contact-method" name="contact-method">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Send Message">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+</body>
+</html>
+
+```

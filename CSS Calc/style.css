@@ -1,0 +1,41 @@
+/* ========================
+   EXERCISE 1
+   ======================== */
+.ex-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 120px;
+}    
+.left-section {
+    width: calc(100% - 20px);
+    background-color: pink;
+}
+.right-section {
+    width: 20px;
+    background-color: #f08080
+}
+/* ========================
+   EXERCISE 2
+   ======================== */
+   .container2 {
+    display: flex;
+    width: 40%;
+    border: 3px solid #c2185b;
+  
+  
+   }
+   .box {
+    width: calc(100% / 3);
+    height: 100px;
+    background-color: pink;
+    border: 2px solid black;
+
+   }
+   .ex2-title{
+    text-align: center;
+   }

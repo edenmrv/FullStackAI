@@ -1,0 +1,12 @@
+let meatArr = ["beef","chicken"];
+let vegetableArr = ["rabbit","carrots","potatoes","lettuce"];
+
+let [misplacedMeat, ...actualVeggies] = vegetableArr;
+meatArr = [...meatArr, misplacedMeat];
+vegetableArr = [...actualVeggies];
+
+console.log("Fixed Meat Array:", meatArr); 
+// 'beef', 'chicken', 'rabbit'
+
+console.log("Fixed Vegetable Array:", vegetableArr); 
+// 'carrots', 'potatoes', 'lettuce'
