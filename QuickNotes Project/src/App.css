@@ -1,0 +1,192 @@
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+}
+
+.hero-card {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #64748b;
+  margin: 0 0 8px;
+}
+
+.subtext {
+  color: #475569;
+  line-height: 1.6;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.note-form input,
+.note-form select,
+.note-form textarea,
+.toolbar input {
+  border: 1px solid #dbe4ee;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font: inherit;
+  background: #f8fafc;
+}
+
+.note-form textarea {
+  min-height: 110px;
+  line-height: 1.5;
+}
+
+.form-actions,
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 9px 14px;
+  cursor: pointer;
+  font: inherit;
+  background: #111827;
+  color: white;
+}
+
+button.ghost,
+.filter {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+button:hover {
+  opacity: 0.92;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter.active {
+  background: #111827;
+  color: white;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.note-card {
+  border-radius: 16px;
+  padding: 14px;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  cursor: pointer;
+}
+
+.note-top,
+.modal-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.chip {
+  display: inline-block;
+  padding: 5px 8px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.delete-btn {
+  background: rgba(255, 255, 255, 0.7);
+  color: #7f1d1d;
+  padding: 6px 10px;
+}
+
+.note-body {
+  margin: 10px 0;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.note-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.82rem;
+  color: #334155;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal {
+  background: white;
+  border-radius: 18px;
+  width: min(640px, 100%);
+  padding: 20px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.25);
+}
+
+.modal-body {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  margin: 12px 0;
+}
+
+.edit-box {
+  margin-top: 14px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 14px;
+}
+
+@media (max-width: 760px) {
+  .hero-card {
+    grid-template-columns: 1fr;
+  }
+
+  .app-shell {
+    padding: 14px;
+  }
+}
