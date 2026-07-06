@@ -1,0 +1,148 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background-color: #2a2848;
+  border-bottom: 2px solid #b8860b;
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f0c14b;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-transform: capitalize;
+}
+
+.navbar-links a:hover {
+  color: #f0c14b;
+}
+
+.home {
+  position: relative;
+  min-height: calc(100vh - 70px);
+}
+
+#home-background {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, #3a3768, #1b1a2e);
+  z-index: -1;
+}
+
+.home-content {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.home-content h1 {
+  font-size: 42px;
+  color: #f0c14b;
+  margin-bottom: 12px;
+}
+
+.home-content p {
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  width: 200px;
+  padding: 40px 20px;
+  background-color: #2a2848;
+  border: 1px solid #b8860b;
+  border-radius: 8px;
+  font-size: 22px;
+  text-transform: capitalize;
+  transition: transform 0.15s;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  color: #f0c14b;
+}
+
+.entities {
+  padding: 40px 32px;
+}
+
+.entities h2 {
+  text-transform: capitalize;
+  color: #f0c14b;
+  margin-bottom: 24px;
+}
+
+.entity-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.entity-card {
+  padding: 20px;
+  background-color: #2a2848;
+  border: 1px solid #444;
+  border-radius: 8px;
+  transition: border-color 0.15s;
+}
+
+.entity-card:hover {
+  border-color: #f0c14b;
+}
+
+.entity-card h3 {
+  margin-bottom: 6px;
+}
+
+.entity-card span {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.entity {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 32px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  opacity: 0.7;
+}
+
+.back-link:hover {
+  opacity: 1;
+  color: #f0c14b;
+}
+
+.entity h2 {
+  font-size: 34px;
+  color: #f0c14b;
+}
+
+.entity h4 {
+  font-weight: normal;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.entity p {
+  line-height: 1.7;
+  font-size: 18px;
+}
