@@ -7,6 +7,8 @@ import { ShoppingList } from './stores/ShoppingList'
 
 const groceryList = new ShoppingList()
 groceryList.list.push(new Item('Potatoes'))
+groceryList.list.push(new Item('Corn'))
+groceryList.list.push(new Item('Sombreros'))
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

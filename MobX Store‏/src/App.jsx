@@ -1,6 +1,8 @@
 import { useState } from 'react'
+import { observer } from 'mobx-react'
+import Item from './components/Item'
 
-function App({ store }) {
+const App = observer(({ store }) => {
   const [newItem, setNewItem] = useState('')
 
   const addItem = () => {
@@ -20,8 +22,14 @@ function App({ store }) {
         />
         <button onClick={addItem}>Add</button>
       </div>
+
+      <div className="list">
+        {store.list.map(item => (
+          <Item key={item.name} item={item} store={store} />
+        ))}
+      </div>
     </div>
   )
-}
+})
 
 export default App
