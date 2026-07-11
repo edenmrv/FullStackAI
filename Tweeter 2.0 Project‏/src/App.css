@@ -1,7 +1,64 @@
+.navbar {
+  background: #2f343b;
+  padding: 18px 26px;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #d7dde2;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
 .page {
   max-width: 780px;
   margin: 0 auto;
-  padding: 20px 16px 60px;
+  padding: 40px 16px 60px;
+}
+
+/* profile page */
+.profile-title {
+  font-size: 34px;
+  font-weight: normal;
+  margin-bottom: 26px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-label {
+  color: #8b949c;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.profile-input {
+  background: transparent;
+  border: 1px solid #9aa4ad;
+  border-radius: 6px;
+  padding: 14px;
+  color: #ffffff;
+  font-size: 17px;
+  outline: none;
+}
+
+.profile-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.saved-msg {
+  color: #4caf50;
 }
 
 /* create tweet box */
