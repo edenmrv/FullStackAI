@@ -8,7 +8,8 @@ const Item = observer(({ item, store }) => {
   return (
     <div className={item.completed ? 'item crossed' : 'item'}>
       <input type="checkbox" checked={item.completed} onChange={checkItem} />
-      {item.name}
+      <span className="name">{item.name}</span>
+      <span className="location">{item.location}</span>
     </div>
   )
 })
