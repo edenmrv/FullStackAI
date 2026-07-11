@@ -83,3 +83,53 @@ button {
   margin-right: 8px;
   padding: 6px 10px;
 }
+
+/* Exercise 3 - Registration Wizard */
+.wizard-step {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 320px;
+}
+
+.wizard-step label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.wizard-step label.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+}
+
+.wizard-step input,
+.wizard-step select {
+  padding: 6px;
+}
+
+.wizard-step label.checkbox input {
+  width: auto;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 13px;
+}
+
+.wizard-nav {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.wizard-nav button {
+  padding: 8px 16px;
+  border: 1px solid #333;
+  background: #fff;
+  border-radius: 6px;
+}

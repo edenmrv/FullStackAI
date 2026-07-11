@@ -1,5 +1,6 @@
 import ShoppingCart from './exercises/ShoppingCart'
 import ThemeDemo from './exercises/ThemeDemo'
+import RegistrationWizard from './exercises/RegistrationWizard'
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
 
       <section className="exercise">
         <ThemeDemo />
+      </section>
+
+      <section className="exercise">
+        <RegistrationWizard />
       </section>
     </div>
   )
