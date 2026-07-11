@@ -90,7 +90,7 @@ function Article() {
   return (
     <article>
       <h1>Article Title</h1>
-      <p>This content uses the {theme} theme. No theme props are passed anywhere &mdash; every component reads it from context.</p>
+      <p>This content uses the {theme} theme. Every component here reads it straight from context, no props involved.</p>
     </article>
   )
 }
