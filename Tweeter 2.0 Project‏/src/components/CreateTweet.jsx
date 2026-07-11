@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { MAX_CHARS } from '../lib/constants'
+import { useTweets } from '../context/TweetsContext'
 
-const CreateTweet = ({ onCreate, posting }) => {
+const CreateTweet = () => {
+  const { addTweet, posting } = useTweets()
   const [text, setText] = useState('')
 
   const tooLong = text.length > MAX_CHARS
@@ -9,7 +11,7 @@ const CreateTweet = ({ onCreate, posting }) => {
 
   const handleSubmit = () => {
     if (tooLong || isEmpty || posting) return
-    onCreate(text.trim())
+    addTweet(text.trim())
     setText('')
   }
 

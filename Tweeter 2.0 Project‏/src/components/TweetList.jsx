@@ -1,6 +1,9 @@
 import Tweet from './Tweet'
+import { useTweets } from '../context/TweetsContext'
 
-const TweetList = ({ tweets }) => {
+const TweetList = () => {
+  const { tweets } = useTweets()
+
   // newest first
   const sorted = [...tweets].sort((a, b) => new Date(b.date) - new Date(a.date))
 
