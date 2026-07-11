@@ -11,6 +11,7 @@ export class ShoppingList {
       length: observable,
       addItem: action,
       checkItem: action,
+      editItem: action,
     })
   }
 
@@ -22,5 +23,10 @@ export class ShoppingList {
   checkItem = (name) => {
     const item = this.list.find(i => i.name === name)
     item.completed = !item.completed
+  }
+
+  editItem = (itemName, newLocation) => {
+    const item = this.list.find(i => i.name === itemName)
+    item.location = newLocation
   }
 }

@@ -67,3 +67,17 @@ h1 {
   color: #888;
   font-size: 13px;
 }
+
+.item button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+.editButton {
+  margin-left: auto;
+  background: #eee;
+  color: #333;
+}
