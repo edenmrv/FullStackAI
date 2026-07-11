@@ -1,4 +1,4 @@
-import { observable, makeObservable } from 'mobx'
+import { observable, action, makeObservable } from 'mobx'
 
 export class ShoppingList {
   constructor() {
@@ -8,6 +8,12 @@ export class ShoppingList {
     makeObservable(this, {
       list: observable,
       length: observable,
+      checkItem: action,
     })
+  }
+
+  checkItem = (name) => {
+    const item = this.list.find(i => i.name === name)
+    item.completed = !item.completed
   }
 }
