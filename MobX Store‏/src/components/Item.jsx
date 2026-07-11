@@ -12,12 +12,17 @@ const Item = observer(({ item, store }) => {
     }
   }
 
+  const deleteItem = () => {
+    store.deleteItem(item.name)
+  }
+
   return (
     <div className={item.completed ? 'item crossed' : 'item'}>
       <input type="checkbox" checked={item.completed} onChange={checkItem} />
       <span className="name">{item.name}</span>
       <span className="location">{item.location}</span>
       <button className="editButton" onClick={editItem}>Edit</button>
+      <button className="deleteButton" onClick={deleteItem}>Delete</button>
     </div>
   )
 })

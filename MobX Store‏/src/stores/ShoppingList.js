@@ -12,6 +12,7 @@ export class ShoppingList {
       addItem: action,
       checkItem: action,
       editItem: action,
+      deleteItem: action,
     })
   }
 
@@ -28,5 +29,10 @@ export class ShoppingList {
   editItem = (itemName, newLocation) => {
     const item = this.list.find(i => i.name === itemName)
     item.location = newLocation
+  }
+
+  deleteItem = (name) => {
+    this.list = this.list.filter(i => i.name !== name)
+    this.length = this.list.length
   }
 }

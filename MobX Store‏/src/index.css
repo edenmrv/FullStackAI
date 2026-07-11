@@ -81,3 +81,8 @@ h1 {
   background: #eee;
   color: #333;
 }
+
+.deleteButton {
+  background: #e74c3c;
+  color: #fff;
+}
