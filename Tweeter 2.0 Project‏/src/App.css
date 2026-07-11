@@ -1,0 +1,94 @@
+.page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 20px 16px 60px;
+}
+
+/* create tweet box */
+.create-tweet {
+  border: 1px solid #9aa4ad;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+.create-input {
+  width: 100%;
+  min-height: 150px;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  color: #d7dde2;
+  font-size: 18px;
+  font-family: inherit;
+}
+
+.create-input::placeholder {
+  color: #8b949c;
+}
+
+.create-bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.error-msg {
+  color: #b00020;
+  background: #f8d7da;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: auto;
+}
+
+.tweet-btn {
+  background: #3b6cf6;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 22px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.tweet-btn:hover {
+  background: #2f5de0;
+}
+
+.tweet-btn:disabled {
+  background: #3b6cf6;
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* tweets list */
+.tweet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.tweet {
+  background: #2f343b;
+  border-radius: 6px;
+  padding: 18px 22px;
+}
+
+.tweet-head {
+  display: flex;
+  justify-content: space-between;
+  color: #8b949c;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.tweet-content {
+  color: #e8ecef;
+  font-size: 16px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
