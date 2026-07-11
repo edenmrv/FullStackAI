@@ -3,3 +3,8 @@ body {
   font-family: sans-serif;
   background-color: #ecf0f1;
 }
+
+.conditional {
+  text-decoration: line-through;
+  color: #999;
+}

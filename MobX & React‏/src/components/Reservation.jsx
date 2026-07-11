@@ -13,7 +13,7 @@ class Reservation extends Component {
   render() {
     const { res } = this.props
     return (
-      <div>
+      <div className={res.completed ? 'conditional' : ''}>
         <span>{res.name}</span>
         <span> - {res.numPeople} people</span>
         <button onClick={this.seat}>Seat Reservation</button>
