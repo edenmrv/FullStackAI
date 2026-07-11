@@ -72,3 +72,14 @@ button {
   color: #fff;
   border-radius: 6px;
 }
+
+/* Exercise 2 - Theme Context */
+.exercise nav a {
+  color: inherit;
+}
+
+.exercise header button,
+.exercise header select {
+  margin-right: 8px;
+  padding: 6px 10px;
+}

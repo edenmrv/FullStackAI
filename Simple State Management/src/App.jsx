@@ -1,4 +1,5 @@
 import ShoppingCart from './exercises/ShoppingCart'
+import ThemeDemo from './exercises/ThemeDemo'
 
 function App() {
   return (
@@ -7,6 +8,10 @@ function App() {
 
       <section className="exercise">
         <ShoppingCart />
+      </section>
+
+      <section className="exercise">
+        <ThemeDemo />
       </section>
     </div>
   )
