@@ -6,7 +6,9 @@ const App = observer(({ store }) => {
   const [newItem, setNewItem] = useState('')
 
   const addItem = () => {
-    store.addItem(newItem)
+    const name = newItem.trim()
+    if (!name) return
+    store.addItem(name)
     setNewItem('')
   }
 

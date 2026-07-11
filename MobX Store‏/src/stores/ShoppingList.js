@@ -1,4 +1,5 @@
 import { observable, action, makeObservable } from 'mobx'
+import { Item } from './Item'
 
 export class ShoppingList {
   constructor() {
@@ -8,8 +9,14 @@ export class ShoppingList {
     makeObservable(this, {
       list: observable,
       length: observable,
+      addItem: action,
       checkItem: action,
     })
+  }
+
+  addItem = (name) => {
+    this.list.push(new Item(name))
+    this.length = this.list.length
   }
 
   checkItem = (name) => {
