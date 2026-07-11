@@ -65,6 +65,20 @@
   cursor: not-allowed;
 }
 
+.loading {
+  color: #8b949c;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page-error {
+  color: #b00020;
+  background: #f8d7da;
+  padding: 10px 14px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
 /* tweets list */
 .tweet-list {
   display: flex;
